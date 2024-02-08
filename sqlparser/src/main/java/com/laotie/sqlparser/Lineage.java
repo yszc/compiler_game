@@ -10,7 +10,7 @@ import net.sf.jsqlparser.util.TablesNamesFinder;
 
 public class Lineage {
     public static void main(String[] args) {
-        // TODO: support: insert/insert overwrite/upsert/replace/update/merge
+        // TODO: support: insert/insert overwrite/upsert/replace/update/merge/forien key
         String sqlStr = "insert into c1\r\n" + //
                         "select * from(\r\n" + //
                         "\tselect * from db1.a1 \r\n" + //
@@ -32,7 +32,6 @@ public class Lineage {
             }
             System.out.println("well done.");
         } catch (JSQLParserException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
