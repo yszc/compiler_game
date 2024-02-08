@@ -10,6 +10,7 @@ import net.sf.jsqlparser.util.TablesNamesFinder;
 
 public class Lineage {
     public static void main(String[] args) {
+        // TODO: support: insert/insert overwrite/upsert/replace/update/merge
         String sqlStr = "insert into c1\r\n" + //
                         "select * from(\r\n" + //
                         "\tselect * from db1.a1 \r\n" + //
